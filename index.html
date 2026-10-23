@@ -1918,6 +1918,7 @@ footer .avail{white-space:normal;min-width:0}
 </style>
 <style id="sc-align">@media (min-width:861px){#cs-view .showcase .sc-phone{justify-self:center}}</style>
 <style id="pr-concept">#cs-view .pr-ph.concept img{filter:grayscale(1) contrast(1.05);opacity:.92}</style>
+<style id="cc-arrow-hover">.cc-ar svg{transition:transform .25s ease}.cc-card:hover .cc-ar svg,.cc-ar:hover svg{transform:rotate(45deg)}.cc-card:hover .cc-ar,.cc-ar:hover{background:var(--grey-dark)}.cc-card:hover,.cc-card:hover .cc-in{opacity:1}.cc-ar{transition:background .25s ease}</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><div class="w" id="introW"><img class="av" alt="" width="40" height="40"><span class="l">michele</span><span class="sl">/</span><span class="r">fiore</span></div></div>
@@ -3278,7 +3279,7 @@ footer .avail{white-space:normal;min-width:0}
   function movePillTo(n) { side.querySelectorAll("[data-nav]").forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-nav") === n); }); movePill(); }
   side.querySelector('[data-nav="projects"]').addEventListener("click", function (e) { e.stopImmediatePropagation(); goProjects(); });
   side.querySelector('[data-nav="home"]').addEventListener("click", function () { closeCaseQuiet(); window.scrollTo({ top: 0, behavior: "smooth" }); });
-  document.getElementById("mark").addEventListener("click", function () { var was = cs.classList.contains("open"); closeCaseQuiet(); openPanel(null); movePillTo("home"); history.replaceState(null, "", location.pathname + location.search); window.scrollTo({ top: 0, behavior: was ? "auto" : "smooth" }); });
+  document.getElementById("mark").addEventListener("click", function (e) { e.preventDefault(); e.stopImmediatePropagation(); try { history.replaceState(null, "", location.pathname + location.search); } catch (x) {} window.scrollTo(0, 0); location.reload(); });
   window.addEventListener("scroll", function () {
     if (document.body.classList.contains("panel-open") || cs.classList.contains("open")) return;
     var on = projSec.getBoundingClientRect().top < window.innerHeight * 0.45;
