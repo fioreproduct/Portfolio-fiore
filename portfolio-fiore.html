@@ -3278,6 +3278,7 @@ footer .avail{white-space:normal;min-width:0}
   function movePillTo(n) { side.querySelectorAll("[data-nav]").forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-nav") === n); }); movePill(); }
   side.querySelector('[data-nav="projects"]').addEventListener("click", function (e) { e.stopImmediatePropagation(); goProjects(); });
   side.querySelector('[data-nav="home"]').addEventListener("click", function () { closeCaseQuiet(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+  document.getElementById("mark").addEventListener("click", function () { var was = cs.classList.contains("open"); closeCaseQuiet(); openPanel(null); movePillTo("home"); history.replaceState(null, "", location.pathname + location.search); window.scrollTo({ top: 0, behavior: was ? "auto" : "smooth" }); });
   window.addEventListener("scroll", function () {
     if (document.body.classList.contains("panel-open") || cs.classList.contains("open")) return;
     var on = projSec.getBoundingClientRect().top < window.innerHeight * 0.45;
