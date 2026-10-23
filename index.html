@@ -1896,28 +1896,28 @@ footer .avail{white-space:normal;min-width:0}
 </style>
 <style id="xs-mock">#page-xsell .xs-mock{margin:40px 0 0;max-width:720px}#page-xsell .xs-mock img{display:block;width:100%;height:auto;border-radius:16px}</style>
 <style id="promo-challenge">
-#page-vetrine .pr-split{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center;margin-top:40px}
-#page-vetrine .pr-split.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}
-#page-vetrine .pr-list{display:grid;gap:22px;min-width:0}
-#page-vetrine .pr-it{display:flex;gap:16px;align-items:flex-start}
-#page-vetrine .pr-it b{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:13px;font-weight:600}
-#page-vetrine .pr-it b:empty{display:none}
-#page-vetrine .pr-it h4{margin:0 0 4px;font-size:17px;font-weight:600}
-#page-vetrine .pr-it p{margin:0;font-size:15px;line-height:1.5;opacity:.72}
-#page-vetrine .pr-phs{display:grid;gap:20px;justify-items:center;margin-top:0;min-width:0}
-#page-vetrine .pr-phs.three{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;margin-top:40px}
-#page-vetrine .pr-split .pr-phs.three{margin-top:0}
-#page-vetrine .pr-ph{margin:0;width:100%;max-width:260px}
-#page-vetrine .pr-ph img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid rgba(255,255,255,.14)}
-#page-vetrine .pr-ph figcaption{margin-top:10px;font-size:13px;line-height:1.4;opacity:.65;text-align:center}
-#page-vetrine .pr-take,#page-vetrine .pr-test{margin-top:40px}
-#page-vetrine .pr-method{margin-top:36px}
-#page-vetrine .pr-take .stat-label,#page-vetrine .pr-test .stat-label{text-transform:none;letter-spacing:0;font-size:15px;line-height:1.5;max-width:none}
-#page-vetrine .pr-take .stat-label b,#page-vetrine .pr-test .stat-label b{display:block;margin-bottom:4px}
-@media (max-width:820px){#page-vetrine .pr-split,#page-vetrine .pr-split.rev{grid-template-columns:1fr;gap:32px}#page-vetrine .pr-phs.three{gap:12px}#page-vetrine .pr-ph{max-width:none}#page-vetrine .pr-ph figcaption{font-size:11px}}
+#cs-view .pr-split{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center;margin-top:40px}
+#cs-view .pr-split.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.5fr)}
+#cs-view .pr-list{display:grid;gap:22px;min-width:0}
+#cs-view .pr-it{display:flex;gap:16px;align-items:flex-start}
+#cs-view .pr-it b{flex:none;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:13px;font-weight:600}
+#cs-view .pr-it b:empty{display:none}
+#cs-view .pr-it h4{margin:0 0 4px;font-size:17px;font-weight:600}
+#cs-view .pr-it p{margin:0;font-size:15px;line-height:1.5;opacity:.72}
+#cs-view .pr-phs{display:grid;gap:20px;justify-items:center;margin-top:0;min-width:0}
+#cs-view .pr-phs.three{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;margin-top:40px}
+#cs-view .pr-split .pr-phs.three{margin-top:0}
+#cs-view .pr-ph{margin:0;width:100%;max-width:260px}
+#cs-view .pr-ph img{display:block;width:100%;height:auto;border-radius:22px;border:1px solid rgba(255,255,255,.14)}
+#cs-view .pr-ph figcaption{margin-top:10px;font-size:13px;line-height:1.4;opacity:.65;text-align:center}
+#cs-view .pr-take,#cs-view .pr-test{margin-top:40px}
+#cs-view .pr-method{margin-top:36px}
+#cs-view .pr-take .stat-label,#cs-view .pr-test .stat-label{text-transform:none;letter-spacing:0;font-size:15px;line-height:1.5;max-width:none}
+#cs-view .pr-take .stat-label b,#cs-view .pr-test .stat-label b{display:block;margin-bottom:4px}
+@media (max-width:820px){#cs-view .pr-split,#cs-view .pr-split.rev{grid-template-columns:1fr;gap:32px}#cs-view .pr-phs.three{gap:12px}#cs-view .pr-ph{max-width:none}#cs-view .pr-ph figcaption{font-size:11px}}
 </style>
 <style id="sc-align">@media (min-width:861px){#cs-view .showcase .sc-phone{justify-self:center}}</style>
-<style id="pr-concept">#page-vetrine .pr-ph.concept img{filter:grayscale(1) contrast(1.05);opacity:.92}</style>
+<style id="pr-concept">#cs-view .pr-ph.concept img{filter:grayscale(1) contrast(1.05);opacity:.92}</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><div class="w" id="introW"><img class="av" alt="" width="40" height="40"><span class="l">michele</span><span class="sl">/</span><span class="r">fiore</span></div></div>
@@ -2082,6 +2082,12 @@ footer .avail{white-space:normal;min-width:0}
         <h3>Cross-selling</h3>
         <p>Oltre il singolo prodotto</p>
       </div>
+      <div class="project-card arch" style="--c1:#1f3a8a;--c2:#0a1230;" onclick="openCase('promo')">
+        <div class="arch-shape"><img class="thumb-img" loading="lazy" decoding="async" src="images/promo-card.jpg" alt="Promo Redesign: schermata Promozioni"></div>
+        <span class="card-label">Challenge</span>
+        <h3>Promo Redesign</h3>
+        <p>Dalla ricerca al design</p>
+      </div>
       <div class="project-card arch" style="--c1:#D9622B;--c2:#2b1206;" onclick="openCase('cigarlover')">
         <div class="arch-shape"><div class="thumb mock m-dark v3"><div class="ph up dark back"><div class="scr"><i class="u hd"></i><i class="u hero"></i><i class="u row"></i><i class="u row s"></i><i class="u row"></i><i class="u pill"></i></div></div><div class="ph up dark front"><div class="scr"><i class="u hd"></i><i class="u hero"></i><i class="u row"></i><i class="u row s"></i><i class="u row"></i><i class="u pill"></i></div></div><div class="ring"><span>12:40</span></div></div></div>
         <span class="card-label">Progetto personale</span>
@@ -2168,7 +2174,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="sc-text"><span class="sc-tag">AS IS</span><p class="sc-title">Il punto di partenza.</p><p class="sc-sub">Banner, categorie, liste di giochi e promo: tutto in competizione per la stessa attenzione.</p></div>
       <div class="sc-phone"><div class="iphone"><span class="ip-btn ip-l1"></span><span class="ip-btn ip-l2"></span><span class="ip-btn ip-l3"></span><span class="ip-btn ip-r"></span><div class="ip-screen"><video poster="images/vetrine-asis-poster.jpg" autoplay muted loop playsinline preload="metadata" width="384" height="848" aria-label="Home Casino: schermata AS IS, registrazione dell'app"><source src="images/vetrine-asis.mp4" type="video/mp4"><source src="images/vetrine-asis.webm" type="video/webm"></video></div></div></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>01 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>01 / 12</span></div>
   </section>
 
   <section class="slide tavolo">
@@ -2184,7 +2190,7 @@ footer .avail{white-space:normal;min-width:0}
         <div class="seat" style="--i:0"><b>PO / PM</b><span>Priorità e obiettivi</span></div><div class="seat" style="--i:1"><b>Front-end</b><span>Interfaccia e componenti</span></div><div class="seat" style="--i:2"><b>Back-end</b><span>Dati e servizi</span></div><div class="seat" style="--i:3"><b>iOS / Android</b><span>App mobile</span></div><div class="seat" style="--i:4"><b>QA</b><span>Qualità prima del rilascio</span></div><div class="seat" style="--i:5"><b>Analyst</b><span>Dati e metriche d'uso</span></div><div class="seat self" style="--i:6"><b>Design</b><span>Il filo che unisce</span></div>
       </div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>02 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>02 / 12</span></div>
   </section>
 
   <section class="slide">
@@ -2195,7 +2201,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="num">02</div><h4>Design</h4><p>Traduzione degli insight in pilastri e direzioni concrete di design.</p></div>
       <div class="col-item"><div class="num">03</div><h4>Delivery</h4><p>Validazione delle direzioni con il team e gli stakeholder.</p></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>03 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>03 / 12</span></div>
   </section>
 
   <section class="slide">
@@ -2206,7 +2212,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="num">Benchmark</div><h4>Competitor</h4><p>Analisi del mercato per capire dove eravamo indietro e dove no.</p></div>
       <div class="col-item"><div class="num">Workshop</div><h4>Co-design</h4><p>Sessioni con il team per costruire insieme le prime ipotesi.</p></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>04 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>04 / 12</span></div>
   </section>
 
   <section class="slide">
@@ -2218,7 +2224,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="stat">50/50</div><div class="stat-label">utenti divisi su un tema chiave di navigazione</div></div>
       <div class="col-item"><div class="stat">0</div><div class="stat-label">differenze percepite rispetto ai competitor</div></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>05 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>05 / 12</span></div>
   </section>
 
   <section class="slide">
@@ -2230,13 +2236,13 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="num">03</div><h4>Personalizzazione</h4><p>Contenuti che si adattano alle abitudini reali di gioco.</p></div>
       <div class="col-item"><div class="num">04</div><h4>Social & Community</h4><p>Uno spazio per condividere l'esperienza con altri giocatori.</p></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>06 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>06 / 12</span></div>
   </section>
 
   <section class="slide contrast center">
     <div class="slide-number"><span class="num">07</span> La domanda</div>
     <p class="hmw">Come potremmo ridisegnare<br class="br-d"> la Home senza perdere<br class="br-d"> ciò che <em>già funziona</em>?</p>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>07 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>07 / 12</span></div>
   </section>
 
   <section class="slide">
@@ -2292,7 +2298,7 @@ footer .avail{white-space:normal;min-width:0}
     <div class="closing">
       <p>Ho portato al tavolo due direzioni: una evolutiva, che riordina senza stravolgere, e una radicale, che ripensa la Home attorno al giocatore. Proporre <em>due strade</em> invece di una sola soluzione "giusta" cambia la conversazione con gli stakeholder: si passa dal difendere un'idea al discutere un compromesso.</p>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>08 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>08 / 12</span></div>
   </section>
 <section class="slide">
     <div class="slide-number"><span class="num">09</span> Decisione</div>
@@ -2303,7 +2309,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="num">Il metodo</div><h4>Evidenze, non opinioni</h4><p>Due direzioni a confronto e i dati della survey su 1.000+ utenti.</p></div>
       <div class="col-item"><div class="num">Esito</div><h4>Una direzione condivisa</h4><p>La soluzione finale tiene insieme ordine evolutivo e centralità del giocatore.</p></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>09 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>09 / 12</span></div>
   </section>
 <section class="slide final">
     <div class="slide-number"><span class="num">10</span> Soluzione finale</div>
@@ -2342,7 +2348,7 @@ footer .avail{white-space:normal;min-width:0}
         <li><b>4</b><div><strong>Gerarchia più chiara</strong><span>Promo, giochi esclusivi e più giocati con ritmo e dimensioni coerenti.</span></div></li>
       </ol>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>10 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>10 / 12</span></div>
   </section>
 
   <section class="slide">
@@ -2355,7 +2361,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="num">Delivery</div><h4>Validazione prima della consegna</h4><p>Direzioni verificate con team e stakeholder nella fase di Delivery.</p></div>
       <div class="col-item"><div class="num">Squad</div><h4>Con chi l'ho costruita</h4><p>Product, front-end, back-end, iOS, Android, QA e analyst, allo stesso tavolo.</p></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>11 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>11 / 12</span></div>
   </section>
 
   <section class="slide">
@@ -2368,15 +2374,37 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="stat">4</div><div class="stat-label">pilastri a guidare ogni scelta di design</div></div>
     </div>
     <div class="closing"><p>Una Home più chiara da leggere e più rapida da usare: meno righe in competizione, più strada verso il gioco giusto.</p></div>
-    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>12 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>12 / 12</span></div>
   </section>
 
+</div>
 
-  
+<!-- ============ CASE STUDY: PROMO ============ -->
+<div class="page" id="page-promo">
+
+  <section class="slide cover">
+    <a class="back-link" onclick="closeCase()">← Torna ai progetti</a>
+    <h1>Promo Redesign,<br><em>dalla ricerca.</em></h1>
+    <span class="label">Eurobet Casino · UX/UI Challenge · Product Design</span>
+  </section>
+
+  <section class="slide hook">
+    <div class="slide-number"><span class="num">01</span> Il punto di partenza</div>
+    <h2>Prima di disegnare,<br>capire <em>cosa non funziona</em>.</h2>
+    <p class="body-text">Challenge UX/UI su Eurobet Casino. Ho scelto l'area Promozioni, la sezione dove gli utenti scoprono le offerte, perché è strategica e migliorabile: l'obiettivo era renderla più chiara, efficace e coinvolgente. Il lavoro parte dalla ricerca e passa per quattro fasi.</p>
+    <div class="four-col pr-test">
+      <div class="col-item"><div class="stat-label"><b>Discover.</b> Analisi dell'esperienza attuale e dei problemi UX.</div></div>
+      <div class="col-item"><div class="stat-label"><b>Benchmark.</b> Confronto con i competitor per trovare le best practice.</div></div>
+      <div class="col-item"><div class="stat-label"><b>Nuova Promo.</b> Wireframe, user flow e design.</div></div>
+      <div class="col-item"><div class="stat-label"><b>Validazione.</b> Test di usabilità con gli utenti.</div></div>
+    </div>
+    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>01 / 05</span></div>
+  </section>
+
   <section class="slide">
-    <div class="slide-number"><span class="num">13</span> Challenge · Promo</div>
-    <h2>Promo Redesign,<br>una <em>challenge</em>.</h2>
-    <p class="body-text">Challenge UX/UI su Eurobet Casino: ho scelto l'area Promozioni, la sezione dove gli utenti scoprono le offerte, per renderla più chiara, efficace e coinvolgente. Quattro fasi: Discover, Benchmark, nuovo design, validazione con gli utenti.</p>
+    <div class="slide-number"><span class="num">02</span> Discover</div>
+    <h2>Cinque problemi, <em>cinque soluzioni</em>.</h2>
+    <p class="body-text">Ho analizzato la sezione su tre assi: navigazione UX, visual e interaction UI, storytelling dei contenuti. Questi i problemi emersi, ciascuno con la soluzione ipotizzata.</p>
     <div class="pr-split">
       <div class="pr-list">
         <div class="pr-it"><b>1</b><div><h4>Gerarchia visiva confusa</h4><p>Il titolo della promo non emerge abbastanza. Soluzione: più contrasto e dimensioni diverse.</p></div></div>
@@ -2387,11 +2415,11 @@ footer .avail{white-space:normal;min-width:0}
       </div>
       <div class="pr-phs"><figure class="pr-ph"><img src="images/promo-asis.jpg" alt="Promozioni, situazione di partenza" loading="lazy" decoding="async"><figcaption>AS IS</figcaption></figure></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>13 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>02 / 05</span></div>
   </section>
 
   <section class="slide">
-    <div class="slide-number"><span class="num">14</span> Benchmark</div>
+    <div class="slide-number"><span class="num">03</span> Benchmark</div>
     <h2>Cosa fanno <em>gli altri</em>.</h2>
     <p class="body-text">Il confronto serve a capire le best practice e a trovare le aree dove Eurobet può posizionarsi in modo distintivo.</p>
     <div class="pr-phs three">
@@ -2404,11 +2432,11 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="stat-label"><b>Elementi visivi.</b> Layout essenziale e immagini tematiche per ogni offerta.</div></div>
       <div class="col-item"><div class="stat-label"><b>CTA ed engagement.</b> Azioni più evidenti, con vantaggi esclusivi per la community.</div></div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>14 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>03 / 05</span></div>
   </section>
 
   <section class="slide">
-    <div class="slide-number"><span class="num">15</span> Nuova Promo</div>
+    <div class="slide-number"><span class="num">04</span> Nuova Promo</div>
     <h2>Navigazione, CTA, <em>storytelling</em>.</h2>
     <div class="pr-split rev">
       <div class="pr-list">
@@ -2423,11 +2451,11 @@ footer .avail{white-space:normal;min-width:0}
         <figure class="pr-ph concept"><img src="images/promo-sim-2.jpg" alt="Simulazione bonus" loading="lazy" decoding="async"><figcaption>Concept · Simulazione</figcaption></figure>
       </div>
     </div>
-    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>15 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>04 / 05</span></div>
   </section>
 
   <section class="slide">
-    <div class="slide-number"><span class="num">16</span> Validazione</div>
+    <div class="slide-number"><span class="num">05</span> Validazione</div>
     <h2>Come <em>validarla</em>.</h2>
     <p class="body-text">In che modo la riprogettazione della sezione "Promozioni" migliora l'esperienza utente e incentiva la partecipazione ai bonus? Questa la domanda di ricerca che guida il test.</p>
     <div class="four-col pr-test">
@@ -2437,7 +2465,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="stat-label"><b>Engagement.</b> Validare la comunicazione delle promozioni.</div></div>
     </div>
     <p class="body-text pr-method">Metodo quali-quantitativo, usability test con 5-7 utenti abituati alle app di scommesse sportive, 4 task, sessioni da 40 minuti in remoto, con Teams, Mire e Word.</p>
-    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>16 / 16</span></div>
+    <div class="slide-footer"><span><span class="dot"></span>Challenge</span><span>05 / 05</span></div>
   </section>
 
 </div>
