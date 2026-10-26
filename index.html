@@ -3173,7 +3173,6 @@ footer .avail{white-space:normal;min-width:0}
     var el = document.getElementById("intro"); if (!el) return;
     var root = document.documentElement, done = false;
     var seen = false;
-    try { seen = sessionStorage.getItem("introSeen") === "1"; } catch (e) {}
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     function remove() { if (el.parentNode) el.parentNode.removeChild(el); root.classList.remove("introing"); }
     if (seen || reduce || !el.animate) { remove(); return; }
@@ -3183,7 +3182,6 @@ footer .avail{white-space:normal;min-width:0}
     var ease = "cubic-bezier(.22,1,.36,1)";
     function end() {
       if (done) return; done = true;
-      try { sessionStorage.setItem("introSeen", "1"); } catch (e) {}
       remove(); window.scrollTo(0, 0); buildHero();
     }
     if (A) A.animate([{ opacity: 0, transform: "scale(.6)" }, { opacity: 1, transform: "none" }], { duration: 420, delay: 250, easing: ease, fill: "forwards" });
