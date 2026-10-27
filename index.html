@@ -1921,6 +1921,52 @@ footer .avail{white-space:normal;min-width:0}
 <style id="cc-arrow-hover">.cc-ar svg{transition:transform .25s ease}.cc-card:hover .cc-ar svg,.cc-ar:hover svg{transform:rotate(45deg)}.cc-card:hover .cc-ar,.cc-ar:hover{background:var(--grey-dark)}.cc-card:hover,.cc-card:hover .cc-in{opacity:1}.cc-ar{transition:background .25s ease}</style>
 <style id="cc-li-top">#panel-contact .cc-foot-top{margin:18px 0 18px}#panel-contact .cc-foot-top .cc-li{margin-top:0}</style>
 <style id="cv-tl">.cv-row h4 a.cv-tl{color:inherit;text-decoration:underline;text-decoration-color:#2a7fd4;text-underline-offset:6px;text-decoration-thickness:1.5px;transition:text-decoration-color .25s ease,opacity .25s ease}.cv-row h4 a.cv-tl:hover{opacity:1;text-decoration-color:var(--black)}</style>
+<style id="v19-ib">
+#cs-view .todo{background:rgba(42,127,212,.22);color:#9cc6f5;padding:0 .3em;border-radius:4px;font-size:.92em;font-style:normal}
+#cs-view .ib-sum{font-family:var(--font-display);font-size:clamp(22px,3.2vw,40px);line-height:1.25;letter-spacing:-.015em;font-weight:500;max-width:24em;margin:0 0 40px}
+#cs-view .ib-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin:0;border-top:1px solid rgba(255,255,255,.14);padding-top:28px}
+#cs-view .ib-grid dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.55;margin-bottom:8px}
+#cs-view .ib-grid dd{margin:0;font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+#cs-view .ib-inline{margin-top:32px}
+#cs-view .ib-nda{margin:28px 0 0;font-size:13px;line-height:1.5;opacity:.55;max-width:44em}
+#cs-view .ib-extra{opacity:.8}
+@media (max-width:860px){#cs-view .ib-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}}
+@media (max-width:480px){#cs-view .ib-grid{grid-template-columns:minmax(0,1fr)}}
+</style>
+<style id="pp-phases">
+#page-postepay .three-col.steps.phases{gap:18px;margin-top:48px}
+#page-postepay .steps.phases .col-item,#page-postepay .steps.phases .col-item:last-child{padding:36px 32px;min-height:0;gap:0;background:#f1f0ec;border-radius:18px;overflow:hidden}
+#page-postepay .steps.phases .col-item::before,#page-postepay .steps.phases .col-item::after{display:none}
+#page-postepay .steps.phases .col-item .num{margin:0 0 56px;font-size:13px;letter-spacing:.14em;line-height:1;color:#1d5fae;font-family:var(--font);font-weight:500}
+#page-postepay .steps.phases .col-item .num::before{content:"Fase ";text-transform:uppercase}
+#page-postepay .steps.phases .col-item h4{margin:0 0 12px;font-size:clamp(24px,2.2vw,30px)}
+#page-postepay .steps.phases .col-item p{font-size:16px;line-height:1.55;max-width:none}
+@media (max-width:820px){#page-postepay .three-col.steps.phases{gap:14px}#page-postepay .steps.phases .col-item,#page-postepay .steps.phases .col-item:last-child{padding:28px 24px}#page-postepay .steps.phases .col-item .num{margin-bottom:32px}}
+</style>
+<style id="v28-frame">
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover){--fh:clamp(560px,min(56.25vw,calc(100svh - 72px)),860px)}
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover){box-sizing:border-box;min-height:var(--fh) !important;padding:96px 8vw 84px !important;display:flex;flex-direction:column;justify-content:center !important}
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover) img,:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover) video{object-fit:contain !important;height:auto !important;max-width:100% !important}
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover) .mockup-img,:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover) .mockup-row img{max-height:calc(var(--fh) - 320px) !important;width:auto !important;margin-left:auto !important;margin-right:auto !important}
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide.cover .mockup-img{max-height:calc(100svh - 72px - 420px) !important;min-height:240px;object-fit:cover}
+@media (max-width:860px){
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover){min-height:0 !important;padding:72px 6vw 64px !important;justify-content:flex-start !important}
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover) .mockup-img,:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide:not(.cover) .mockup-row img{max-height:70vh !important}
+:is(#page-vetrine,#page-promo,#page-postepay,#page-bancoposta,#page-pec,#page-cockpit,#page-cigarlover) .slide.cover .mockup-img{max-height:50vh !important}
+}
+</style>
+<style id="v28-wfig">
+#page-cockpit .slide.wfig{background:#fff}
+#page-cockpit .slide.wfig img,#page-cockpit .slide.wfig .mockup-img{border-radius:0 !important;box-shadow:none !important}
+</style>
+<style id="v29-contrast">
+#cs-view .slide.contrast .slide-number,#cs-view .slide.contrast .slide-number .label{color:#1d5fae}
+#cs-view .slide.contrast .slide-number .num{color:#0a0a0c}
+#cs-view .slide.contrast:not(.center) h2 em{color:#66665f}
+#cs-view .slide.contrast:not(.center) .col-item .num{color:#1d5fae}
+#page-postepay .slide.cover .mockup-img{object-fit:contain !important;width:auto !important;max-width:100% !important;max-height:min(60vh,560px) !important;min-height:0 !important;display:block;margin:32px auto 0;border-radius:18px}
+</style>
+<style id="v30-bp">#page-bancoposta .slide.contrast .mockup-row{align-items:flex-start}#page-bancoposta .slide.contrast .mockup-row img{height:auto}</style>
 </head>
 <body>
 <div id="intro" aria-hidden="true"><div class="w" id="introW"><img class="av" alt="" width="40" height="40"><span class="l">michele</span><span class="sl">/</span><span class="r">fiore</span></div></div>
@@ -2167,6 +2213,20 @@ footer .avail{white-space:normal;min-width:0}
     <span class="label">Vetrine Casino · Home Redesign · Product Design</span>
   </section>
 
+  <section class="slide ib">
+    <div class="slide-number"><span class="num">00</span> In breve</div>
+    <p class="ib-sum">La home del Casino era cresciuta senza gerarchia. L'ho ridisegnata attorno al giocatore, partendo dall'ascolto di oltre 1.000 utenti e mettendo a confronto due direzioni.</p>
+    <dl class="ib-grid">
+      <div><dt>Ruolo</dt><dd>Product Designer</dd></div>
+      <div><dt>Team</dt><dd>Squad Gaming: PO e PM, front-end, back-end, iOS e Android, QA, analyst</dd></div>
+      <div><dt>Fasi</dt><dd>Understand, Design, Delivery</dd></div>
+          <div><dt>Esito</dt><dd>Una Home con gerarchia più chiara: ricerca a portata, categorie su una riga e ripresa dell'ultimo gioco in alto.</dd></div>
+    </dl>
+    <p class="ib-nda">Progetto riservato: dati interni e dettagli sensibili sono omessi o generalizzati.</p>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>In breve</span></div>
+  </section>
+
+
   
 
   <section class="slide hook">
@@ -2368,15 +2428,15 @@ footer .avail{white-space:normal;min-width:0}
   </section>
 
   <section class="slide">
-    <div class="slide-number"><span class="num">12</span> Risultati</div>
-    <h2>Cosa ho <em>validato</em>.</h2>
+    <div class="slide-number"><span class="num">12</span> I numeri</div>
+    <h2>I numeri che hanno <em>guidato</em> il progetto.</h2>
     <div class="four-col">
       <div class="col-item"><div class="stat">1.000+</div><div class="stat-label">utenti ascoltati con la survey prima di disegnare</div></div>
       <div class="col-item"><div class="stat">70%</div><div class="stat-label">preferisce le slot: categorie e slot restano in primo piano</div></div>
       <div class="col-item"><div class="stat">2</div><div class="stat-label">direzioni portate al tavolo e messe a confronto</div></div>
       <div class="col-item"><div class="stat">4</div><div class="stat-label">pilastri a guidare ogni scelta di design</div></div>
     </div>
-    <div class="closing"><p>Una Home più chiara da leggere e più rapida da usare: meno righe in competizione, più strada verso il gioco giusto.</p></div>
+    <div class="closing"><p>L'obiettivo: una Home più chiara da leggere e più rapida da usare, con meno righe in competizione e più strada verso il gioco giusto.</p></div>
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>12 / 12</span></div>
   </section>
 
@@ -2390,6 +2450,20 @@ footer .avail{white-space:normal;min-width:0}
     <h1>Promo Redesign,<br><em>dalla ricerca.</em></h1>
     <span class="label">Eurobet Casino · UX/UI Challenge · Product Design</span>
   </section>
+
+  <section class="slide ib">
+    <div class="slide-number"><span class="num">00</span> In breve</div>
+    <p class="ib-sum">Challenge UX/UI sull'area Promozioni di Eurobet Casino: dalla ricerca al nuovo design, con un piano di test per validarlo.</p>
+    <dl class="ib-grid">
+      <div><dt>Ruolo</dt><dd>UX/UI Designer, challenge</dd></div>
+      <div><dt>Team</dt><dd>Lavoro individuale</dd></div>
+      <div><dt>Fasi</dt><dd>Discover, Benchmark, Nuova Promo, Validazione</dd></div>
+          <div><dt>Esito</dt><dd>Concept della sezione Promozioni e piano di test pronti per la validazione con gli utenti.</dd></div>
+    </dl>
+    
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>In breve</span></div>
+  </section>
+
 
   <section class="slide hook">
     <div class="slide-number"><span class="num">01</span> Il punto di partenza</div>
@@ -2488,6 +2562,19 @@ footer .avail{white-space:normal;min-width:0}
   </section>
 
   <article class="art">
+    <section class="art-sec">
+      <div class="art-head"><div class="art-eye">In breve</div><h2 class="art-h">Dall'app Sport <em>al Casino</em>.</h2></div>
+      <div class="art-main">
+        <p class="art-body">Come portare chi è già nell'app Sport a scoprire il Casino: dall'analisi dei dati di partenza a una vetrina Casino dentro l'app Sport.</p>
+        <dl class="ib-grid ib-inline">
+          <div><dt>Ruolo</dt><dd>Product Designer</dd></div>
+          <div><dt>Fasi</dt><dd>Dati, Vetrina, Navigazione, Risultato</dd></div>
+          <div><dt>Esito</dt><dd>Una vetrina Casino dentro l'app Sport: i giochi lanciati dall'app Sport risultano sensibilmente più alti rispetto all'anno precedente (dato interno generalizzato).</dd></div>
+        </dl>
+        <p class="ib-nda">Progetto riservato: dati interni e dettagli sensibili sono omessi o generalizzati.</p>
+      </div>
+    </section>
+
     <section class="art-sec art-full">
       <div class="art-eye">Obiettivo</div>
       <p class="art-lead">Portare traffico dall'app Sport al Casino, fino al gioco: <em>far giocare chi era arrivato per le scommesse</em>.</p>
@@ -2511,7 +2598,7 @@ footer .avail{white-space:normal;min-width:0}
     <section class="art-sec">
       <div class="art-head"><div class="art-eye">Dati</div><h2 class="art-h">Dove si <em>perdeva</em> l'utente.</h2></div>
       <div class="art-main">
-        <p class="art-body">Prima della vetrina, l'app Sport portava al Casino con un'icona flottante. Quattro settimane di analytics, tra settembre e ottobre 2024, hanno mostrato quanto funzionava e dove no.</p>
+        <p class="art-body">Prima della vetrina, l'app Sport portava al Casino con un'icona flottante. Quattro settimane di analytics hanno mostrato quanto funzionava e dove no.</p>
         <div class="art-stats">
           <div><b>9,3%</b><span>degli utenti dell'app Sport arrivava alla pagina Casino</span></div>
           <div><b>19,2%</b><span>di chi arrivava lanciava almeno un gioco</span></div>
@@ -2523,9 +2610,16 @@ footer .avail{white-space:normal;min-width:0}
     </section>
 
     <section class="art-sec">
+      <div class="art-head"><div class="art-eye">Decisione</div><h2 class="art-h">Da icona flottante a <em>vetrina</em>.</h2></div>
+      <div class="art-main">
+        <p class="art-body">L'icona flottante portava al Casino il 9,3% degli utenti dell'app Sport, e il 19,2% di chi arrivava lanciava almeno un gioco. Il margine era nella scoperta: invece di rimandare soltanto alla pagina Casino, ho scelto di mostrare i giochi dentro l'app Sport.</p>
+      </div>
+    </section>
+
+    <section class="art-sec">
       <div class="art-head"><div class="art-eye">La vetrina</div><h2 class="art-h">Una vetrina Casino <em>dentro</em> l'app Sport.</h2></div>
       <div class="art-main">
-        <p class="art-body">La tab Casino apre una vetrina pensata per l'app Sport: categorie come chip in alto (Tutti, Slot, Roulette, Live), un banner in evidenza, e righe di giochi per categoria. In fondo, un unico invito: "Scopri gli altri giochi in app Casino".</p>
+        <p class="art-body">La tab Casino apre una vetrina pensata per l'app Sport: categorie come chip in alto (Tutti, Slot, Roulette, Live), un banner in evidenza, e righe di giochi per categoria. In fondo, un unico invito: "Scopri gli altri giochi in app Casino". Ho provato più configurazioni, con righe quadrate, mosaici, versione chiara e scura.</p>
         <figure class="xs-mock"><img src="images/xsell-mockup.jpg" alt="App Sport su smartphone in orizzontale" loading="lazy" width="1400" height="1358"></figure>
         <div class="xs-figs two"><figure class="xs-fig"><img src="images/xsell-casino-tutti.jpg" alt="Vetrina Casino, categoria Tutti" loading="lazy"><figcaption>Tutti</figcaption></figure><figure class="xs-fig"><img src="images/xsell-casino-slot.jpg" alt="Vetrina Casino, filtro Slot" loading="lazy"><figcaption>Slot</figcaption></figure></div>
       </div>
@@ -2539,19 +2633,13 @@ footer .avail{white-space:normal;min-width:0}
       </div>
     </section>
 
-    <section class="art-sec">
-      <div class="art-head"><div class="art-eye">Layout e versioni</div><h2 class="art-h">Stessa vetrina, <em>ritmi diversi</em>.</h2></div>
-      <div class="art-main">
-        <p class="art-body">Per la stessa vetrina ho provato più configurazioni: righe quadrate, mosaici e formati larghi per dare ritmo alla pagina, la versione chiara e quella scura, e diverse combinazioni di home, con o senza banner e con o senza le quattro icone di scorciatoia.</p>
-        <div class="xs-figs three"><figure class="xs-fig"><img src="images/xsell-mosaico.jpg" alt="Vetrina con mosaici" loading="lazy"><figcaption>Mosaici e formati larghi</figcaption></figure><figure class="xs-fig"><img src="images/xsell-black.jpg" alt="Vetrina, versione scura" loading="lazy"><figcaption>Versione scura</figcaption></figure><figure class="xs-fig"><img src="images/xsell-light.jpg" alt="Vetrina, versione chiara" loading="lazy"><figcaption>Versione chiara</figcaption></figure></div>
-      </div>
-    </section>
 
     <section class="art-sec art-full art-last">
-      <div class="art-eye">Invito</div>
-      <p class="art-lead">Un solo invito, in fondo a ogni vetrina.</p>
-      <div class="art-vis ctas"><div><span class="cta-pill yl">Scopri gli altri giochi in app Casino</span><small>CTA verso l'app Casino</small></div></div>
+      <div class="art-eye">Risultato</div>
+      <p class="art-lead">Dopo il rilascio, i giochi lanciati dall'app Sport sono <em>sensibilmente più alti dell'anno prima</em>.</p>
+      <p class="art-body art-note">Dato interno generalizzato. È un indicatore, non una prova isolata: il periodo include una finestra con problemi di tracciamento.</p>
     </section>
+
   </article>
 </div>
 
@@ -2563,6 +2651,20 @@ footer .avail{white-space:normal;min-width:0}
     <h1>Cigar Lover,<br>il compagno <em>nella fumata</em>.</h1>
     <span class="label">Cigar Lover · Ricerca, Strategia & Product Design · Progetto personale</span>
   </section>
+
+  <section class="slide ib">
+    <div class="slide-number"><span class="num">00</span> In breve</div>
+    <p class="ib-sum">App con AI che accompagna il fumatore durante la fumata. Dalla ricerca su 23 fumatori a un prototipo funzionante e a una landing con waitlist.</p>
+    <dl class="ib-grid">
+      <div><dt>Ruolo</dt><dd>Ricerca, strategia e product design</dd></div>
+      <div><dt>Team</dt><dd>Progetto personale, lavoro individuale</dd></div>
+      <div><dt>Fasi</dt><dd>Ricerca, Key findings, Prodotto, Onboarding, Pre-lancio</dd></div>
+          <div><dt>Esito</dt><dd>Prototipo con due flussi e landing con waitlist, a partire dalla ricerca su 23 fumatori.</dd></div>
+    </dl>
+    
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>In breve</span></div>
+  </section>
+
 
   <section class="slide">
     <div class="slide-number"><span class="num">01</span> Contesto</div>
@@ -2589,7 +2691,7 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="stat">23</div><div class="stat-label">interviste sul campo con fumatori italiani</div></div>
       <div class="col-item"><div class="stat">6</div><div class="stat-label">competitor internazionali analizzati</div></div>
       <div class="col-item"><div class="stat">6</div><div class="stat-label">momenti critici non presidiati da nessuno</div></div>
-      <div class="col-item"><div class="stat">0</div><div class="stat-label">app che accompagnano l'utente durante la fumata</div></div>
+      <div class="col-item"><div class="stat">0</div><div class="stat-label">dei 6 competitor analizzati accompagna l'utente durante la fumata</div></div>
     </div>
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>03 / 07</span></div>
   </section>
@@ -2612,7 +2714,7 @@ footer .avail{white-space:normal;min-width:0}
 
   <section class="slide contrast center">
     <div class="slide-number"><span class="num">05</span> Il Differenziatore</div>
-    <p class="hmw">Nessuno dei competitor accompagna l'utente <em>durante</em> la fumata, solo prima e dopo.</p>
+    <p class="hmw">Tra i competitor analizzati, nessuno accompagna l'utente <em>durante</em> la fumata, solo prima e dopo.</p>
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>05 / 07</span></div>
   </section>
 
@@ -2653,6 +2755,19 @@ footer .avail{white-space:normal;min-width:0}
     <img class="mockup-img" src="images/postepay-hero-crop.png" alt="Postepay Evolution: schermata principale">
   </section>
 
+  <section class="slide ib">
+    <div class="slide-number"><span class="num">00</span> In breve</div>
+    <p class="ib-sum">Da un redesign dei touchpoint fisici a una value proposition digitale: l'acquisto della carta in autonomia, end-to-end e cross-platform.</p>
+    <dl class="ib-grid">
+      <div><dt>Ruolo</dt><dd>UX Designer, Poste Italiane</dd></div>
+      <div><dt>Fasi</dt><dd>Assessment, Ricerca, Lean Experiment</dd></div>
+          <div><dt>Esito</dt><dd>Acquisto della carta in autonomia, end-to-end: 5 minuti per l'onboarding e 8 per l'intera sottoscrizione. Validato con un Lean Experiment su più di 100 persone.</dd></div>
+    </dl>
+    <p class="ib-nda">Progetto riservato: dati interni e dettagli sensibili sono omessi o generalizzati.</p>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>In breve</span></div>
+  </section>
+
+
   <section class="slide">
     <div class="slide-number"><span class="num">01</span> Contesto</div>
     <h2>Da touchpoint fisici a <em>value proposition</em> digitale.</h2>
@@ -2670,6 +2785,13 @@ footer .avail{white-space:normal;min-width:0}
       <div class="col-item"><div class="num">03</div><h4>Lean Experiment</h4><p>100+ persone coinvolte per validare e ottimizzare processo e soluzioni con gli utenti finali.</p></div>
     </div>
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>02 / 05</span></div>
+  </section>
+
+  <section class="slide dec">
+    <div class="slide-number">Decisione</div>
+    <h2>Dal touchpoint fisico al <em>digitale</em>.</h2>
+    <p class="body-text">Il perimetro è passato dal redesign dei touchpoint fisici a una value proposition completamente digitale, validata con un Lean Experiment su più di 100 persone.</p>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>Decisione</span></div>
   </section>
 
   <section class="slide">
@@ -2710,10 +2832,23 @@ footer .avail{white-space:normal;min-width:0}
     <span class="label">App Bancoposta · Guerrilla Card Sorting · Poste Italiane</span>
   </section>
 
+  <section class="slide ib">
+    <div class="slide-number"><span class="num">00</span> In breve</div>
+    <p class="ib-sum">Riordinare il cruscotto dei prodotti nell'app con un guerrilla card sorting, per capire come gli utenti raggruppano davvero le informazioni.</p>
+    <dl class="ib-grid">
+      <div><dt>Ruolo</dt><dd>UX Designer, Poste Italiane</dd></div>
+      <div><dt>Fasi</dt><dd>Contesto, Card sorting, Key findings, Soluzione</dd></div>
+          <div><dt>Esito</dt><dd>Un'architettura informativa modulare, costruita sui raggruppamenti emersi dal card sorting.</dd></div>
+    </dl>
+    <p class="ib-nda">Progetto riservato: dati interni e dettagli sensibili sono omessi o generalizzati.</p>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>In breve</span></div>
+  </section>
+
+
   <section class="slide">
     <div class="slide-number"><span class="num">01</span> Contesto</div>
     <h2>Un cruscotto cresciuto senza <em>criterio</em>.</h2>
-    <p class="body-text">L'obiettivo era ottimizzare il cruscotto dei prodotti in App, migliorando l'accessibilità ai dati finanziari e la chiarezza delle informazioni. Bisognava considerare l'impostazione della SuperApp, i nuovi progetti di Subscription Management, la scalabilità futura, la retroattività dei cruscotti esistenti e funzioni delicate come le domiciliazioni. Avevamo bisogno rapidamente di un punto di vista differente.</p>
+    <p class="body-text">L'obiettivo era ottimizzare il cruscotto dei prodotti in App, migliorando l'accessibilità ai dati finanziari e la chiarezza delle informazioni. Bisognava considerare l'impostazione della SuperApp, i nuovi progetti di Subscription Management, la scalabilità futura, la retroattività dei cruscotti esistenti e funzioni delicate come le domiciliazioni. Avevamo bisogno, in tempi rapidi, di un punto di vista diverso.</p>
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>01 / 05</span></div>
   </section>
 
@@ -2736,7 +2871,14 @@ footer .avail{white-space:normal;min-width:0}
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>03 / 05</span></div>
   </section>
 
-  <section class="slide">
+  <section class="slide dec">
+    <div class="slide-number">Decisione</div>
+    <h2>Due wireframe, una <em>scelta</em>.</h2>
+    <p class="body-text">Il card sorting ha mostrato tre evidenze: una categoria troppo ampia, due sotto-gruppi naturali (e-commerce e mondo fisico) e le domiciliazioni come voce più ambigua. Ho messo a confronto due alternative di wireframe per capire quale rispondesse meglio.</p>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>Decisione</span></div>
+  </section>
+
+  <section class="slide contrast">
     <div class="slide-number"><span class="num">04</span> Soluzione</div>
     <h2>Un'architettura <em>modulare</em>.</h2>
     <p class="body-text">Abbiamo disegnato un'architettura informativa modulare per i diversi prodotti, senza appesantire la gerarchia complessiva. Due alternative di wireframe sono state messe a confronto per validare quale direzione rispondesse meglio ai bisogni emersi dal card sorting.</p>
@@ -2766,6 +2908,19 @@ footer .avail{white-space:normal;min-width:0}
     <span class="label">Posta Elettronica Certificata · Funnel di Vendita · Poste Italiane</span>
     <img class="mockup-img" src="images/pec-hero-crop.png" alt="PEC: funnel di vendita">
   </section>
+
+  <section class="slide ib">
+    <div class="slide-number"><span class="num">00</span> In breve</div>
+    <p class="ib-sum">Riprogettare il funnel di acquisto della PEC: da contenuti caotici a un percorso chiaro e trasparente, sul canale web.</p>
+    <dl class="ib-grid">
+      <div><dt>Ruolo</dt><dd>UX Designer, Poste Italiane</dd></div>
+      <div><dt>Fasi</dt><dd>Challenge, Ricerca, User personas, Soluzione</dd></div>
+          <div><dt>Esito</dt><dd>Un nuovo funnel di acquisto con percorso trasparente, ricerca intuitiva e layout mobile responsive.</dd></div>
+    </dl>
+    <p class="ib-nda">Progetto riservato: dati interni e dettagli sensibili sono omessi o generalizzati.</p>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>In breve</span></div>
+  </section>
+
 
   <section class="slide">
     <div class="slide-number"><span class="num">01</span> Contesto</div>
@@ -2828,6 +2983,19 @@ footer .avail{white-space:normal;min-width:0}
     <img class="mockup-img" src="images/posteitaliane.jpg" alt="App Poste Italiane: Cockpit">
   </section>
 
+  <section class="slide ib">
+    <div class="slide-number"><span class="num">00</span> In breve</div>
+    <p class="ib-sum">Il Cockpit riunisce in un unico posto i dati personali e le impostazioni del profilo nell'app Poste Italiane, con tre stati di azione distinti.</p>
+    <dl class="ib-grid">
+      <div><dt>Ruolo</dt><dd>UX Designer, Poste Italiane</dd></div>
+      <div><dt>Fasi</dt><dd>Contesto, Componenti, Stati di lavorazione, Funnel</dd></div>
+          <div><dt>Esito</dt><dd>Un funnel breve, dai miei dati alla password, raggiungibile senza cercare in più menu.</dd></div>
+    </dl>
+    <p class="ib-nda">Progetto riservato: dati interni e dettagli sensibili sono omessi o generalizzati.</p>
+    <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>In breve</span></div>
+  </section>
+
+
   <section class="slide">
     <div class="slide-number"><span class="num">01</span> Contesto</div>
     <h2>Un account <em>disperso</em> in troppe schermate.</h2>
@@ -2840,16 +3008,12 @@ footer .avail{white-space:normal;min-width:0}
             <video src="images/cockpit-menu.mp4" poster="images/cockpit-menu-poster.jpg" autoplay muted loop playsinline></video>
           </div>
         </div>
-        <div class="device-notify notify-tr">
-          <div class="device-notify-icon">✓</div>
-          <div><strong>Verificato</strong><span>Profilo aggiornato</span></div>
-        </div>
       </div>
     </div>
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>01 / 05</span></div>
   </section>
 
-  <section class="slide">
+  <section class="slide contrast wfig">
     <div class="slide-number"><span class="num">02</span> Componenti</div>
     <h2>Due blocchi,<br>un <em>account</em>.</h2>
     <div class="three-col">
@@ -2860,7 +3024,7 @@ footer .avail{white-space:normal;min-width:0}
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>02 / 05</span></div>
   </section>
 
-  <section class="slide">
+  <section class="slide contrast wfig">
     <div class="slide-number"><span class="num">03</span> Stati di Lavorazione</div>
     <h2>Ogni azione ha il suo <em>stato</em>.</h2>
     <div class="three-col">
@@ -2872,7 +3036,7 @@ footer .avail{white-space:normal;min-width:0}
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>03 / 05</span></div>
   </section>
 
-  <section class="slide">
+  <section class="slide contrast wfig">
     <div class="slide-number"><span class="num">04</span> Funnel</div>
     <h2>Dai miei dati alla <em>password</em>.</h2>
     <p class="body-text">Il funnel "Gestisci Account" segue una sequenza semplice: "I miei dati" → "Gestisci account" → "Modifica password". Ogni passaggio è stato progettato per essere raggiungibile senza dover cercare in più menu.</p>
@@ -2883,7 +3047,7 @@ footer .avail{white-space:normal;min-width:0}
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>04 / 05</span></div>
   </section>
 
-  <section class="slide contrast center accent-bg">
+  <section class="slide contrast center">
     <div class="slide-number"><span class="num">05</span> Chiusura</div>
     <p class="hmw">Un buon account non si <em>nasconde</em>: si lascia gestire da un unico posto.</p>
     <div class="slide-footer"><span><span class="dot"></span>Case Study</span><span>05 / 05</span></div>
